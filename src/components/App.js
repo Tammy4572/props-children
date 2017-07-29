@@ -5,12 +5,15 @@ import BaseLayout from './BaseLayout';
 import ParentComponent from './ParentComponent.js';
 
 class App extends Component {
-  render() {
+     constructor(props){
+          super(props);
+     }
+render() {
     return (
       <div className="App">
-        <BaseLayout>
-        <ParentComponent />
-        </BaseLayout>
+             <BaseLayout >
+             <ParentComponent />
+             </BaseLayout>
       </div>
     );
   }
